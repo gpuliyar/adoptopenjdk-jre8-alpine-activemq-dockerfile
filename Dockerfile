@@ -12,8 +12,8 @@ RUN set -ex; \
     addgroup -S -g 1000 activemq; \
     adduser -S -D -s /sbin/nologin -G activemq -u 1000 activemq; \
     \
-    apk --update add --virtual build-dependencies gnupg; \
-    apk add bash; \
+    apk --update add --no-cache --virtual build-dependencies gnupg; \
+    apk add --no-cache bash; \
     \
     wget -q http://www.apache.org/dist/activemq/KEYS -O KEYS; \
     wget -q https://www.apache.org/dist/activemq/${ACTIVEMQ_VERSION}/${ACTIVEMQ}-bin.tar.gz.asc -O ${ACTIVEMQ}-bin.tar.gz.asc; \
