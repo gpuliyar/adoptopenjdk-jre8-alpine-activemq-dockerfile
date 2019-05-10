@@ -45,4 +45,6 @@ EXPOSE ${ACTIVEMQ_TCP} ${ACTIVEMQ_AMQP} ${ACTIVEMQ_STOMP} ${ACTIVEMQ_MQTT} ${ACT
 
 USER activemq
 
-ENTRYPOINT [ "/bin/sh", "-c", "bin/activemq", "console" ]
+ENTRYPOINT [ "/bin/sh", "-c", "bin/activemq" ]
+
+CMD [ "start" ]
