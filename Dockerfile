@@ -47,4 +47,4 @@ USER activemq
 
 ENTRYPOINT [ "/bin/sh", "-c", "bin/activemq" ]
 
-CMD [ "start" ]
+CMD [ "console" ]
