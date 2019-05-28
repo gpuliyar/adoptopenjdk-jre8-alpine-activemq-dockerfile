@@ -1,5 +1,4 @@
-# adoptopenjdk-jre8-alpine-activemq-dockerfile
-Dockerfile for creating ActiveMQ container image on top of AdoptOpenJDK JRE8 Hotspot Version
+# Dockerfile for creating ActiveMQ container image on top of AdoptOpenJDK JRE8 Hotspot Version
 
 ## What is this project?
 You would have seen by now that there are many GitHub code for building ActiveMQ on top of OpenJDK JRE version. When I was looking for the same building blocks to construct the ActiveMQ Container Image on top of the AdoptOpenJDK JRE version, I couldn't find many. So here is a project that will build the ActiveMQ on top of AdoptOpenJDK JRE version. The code will look almost similar to how it made on top of OpenJDK JRE. The below article will go through explaining what the Dockerfile will look like and what is the purpose of the commands. Feel free to use it. The explanation has nothing in specific to AdoptOpenJDK JRE version. Just the base image uses AdoptOpenJDK instead of OpenJDK.
